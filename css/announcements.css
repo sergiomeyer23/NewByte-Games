@@ -1,0 +1,12 @@
+.announcements-list { display: grid; gap: var(--gap-md); }
+.announcement-item {
+  padding: var(--gap-md);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--gold);
+  border-radius: var(--border-radius);
+  transition: background 0.2s;
+}
+.announcement-item:hover { background: var(--bg-card-hover); }
+.announcement-item h4 { font-family: var(--font-subtitle); font-size: var(--text-base); margin-bottom: 0.3rem; }
+.announcement-item p { font-size: var(--text-sm); color: var(--text-secondary); }

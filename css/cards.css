@@ -1,0 +1,64 @@
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--gap-lg);
+}
+
+.project-card {
+  display: grid;
+  grid-template-rows: auto auto 1fr auto auto;
+  gap: var(--gap-md);
+  padding: var(--gap-lg);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-card);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease, background 0.25s;
+}
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-gold);
+  border-color: var(--gold);
+  background: var(--bg-card-hover);
+}
+
+.card-header { display: grid; grid-template-columns: auto 1fr; align-items: center; gap: var(--gap-md); }
+.card-icon { width: 48px; height: 48px; }
+.card-badges { justify-self: end; }
+.badge {
+  padding: 0.2rem 0.7rem;
+  border: 1px solid var(--border-strong);
+  border-radius: 999px;
+  font-family: var(--font-subtitle);
+  font-size: var(--text-xs);
+  color: var(--gold);
+}
+
+.card-title { font-family: var(--font-title); font-weight: 700; font-size: var(--text-xl); color: var(--gold-light); }
+.card-description { font-size: var(--text-sm); color: var(--text-secondary); }
+
+.card-progress { display: grid; gap: 0.35rem; }
+.progress-bar { height: 6px; border-radius: 3px; background: var(--gold-dim); overflow: hidden; }
+.progress-fill {
+  height: 100%;
+  width: var(--progress);
+  border-radius: 3px;
+  background: var(--bar-color, var(--gold));
+  animation: fillBar 1.2s ease forwards;
+}
+@keyframes fillBar {
+  from { width: 0%; }
+  to   { width: var(--progress); }
+}
+.progress-label { font-size: var(--text-xs); color: var(--text-secondary); }
+
+.card-footer { display: grid; grid-template-columns: 1fr auto; align-items: center; }
+.card-author { font-size: var(--text-sm); color: var(--text-gold); }
+.card-actions { display: flex; gap: 0.25rem; }
+.card-actions button { padding: 0.25rem 0.4rem; border-radius: 4px; transition: background 0.2s, transform 0.2s; }
+.card-actions button:hover { background: var(--border); transform: scale(1.15); }
+
+@media (prefers-reduced-motion: reduce) {
+  .progress-fill { animation: none; }
+  .project-card, .nav-item { transition: none; }
+}

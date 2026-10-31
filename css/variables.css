@@ -1,0 +1,66 @@
+:root {
+  --bg-dark: #0d0f14;
+  --bg-sidebar: #141821;
+  --bg-card: #1a1f2e;
+  --bg-card-hover: #232a3d;
+  --bg-header: #12151e;
+
+  --gold: #c9a84c;
+  --gold-light: #e8d48b;
+  --gold-dim: #c9a84c33;
+  --red-horde: #8b1a1a;
+  --blue-alliance: #1a3a6b;
+  --green-quest: #2ecc71;
+  --purple-epic: #9b59b6;
+  --orange-legendary: #e67e22;
+
+  --text-primary: #e8e6e3;
+  --text-secondary: #8b8680;
+  --text-muted: #5a5550;
+  --text-gold: #c9a84c;
+
+  --border: #c9a84c33;
+  --border-strong: #c9a84c88;
+  --border-radius: 8px;
+
+  --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.4);
+  --shadow-gold: 0 0 12px rgba(201, 168, 76, 0.15);
+
+  --font-display: "MedievalSharp", serif;
+  --font-title: "Cinzel Decorative", serif;
+  --font-subtitle: "Cinzel", serif;
+  --font-body: "Lora", serif;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+
+  --gap-sm: 0.5rem;
+  --gap-md: 1rem;
+  --gap-lg: 1.5rem;
+  --gap-xl: 2rem;
+
+  --sidebar-width: 260px;
+}
+
+body.light-mode {
+  --bg-dark: #f3ecd9;
+  --bg-sidebar: #e8dcc0;
+  --bg-card: #fbf6e8;
+  --bg-card-hover: #f1e8cf;
+  --bg-header: #eadfc3;
+  --gold: #8a6a1c;
+  --gold-light: #6b4f10;
+  --gold-dim: #8a6a1c33;
+  --text-primary: #2a2218;
+  --text-secondary: #5b4f3d;
+  --text-muted: #8a7d66;
+  --text-gold: #8a6a1c;
+  --border: #8a6a1c44;
+  --border-strong: #8a6a1c99;
+  --shadow-card: 0 4px 24px rgba(60, 40, 10, 0.15);
+}
