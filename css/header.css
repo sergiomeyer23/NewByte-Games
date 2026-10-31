@@ -43,8 +43,8 @@
   transition: background 0.2s, transform 0.2s, color 0.2s;
 }
 .btn:hover { background: var(--bg-card-hover); color: var(--gold); transform: translateY(-2px); }
-.btn--primary { background: linear-gradient(180deg, var(--gold), #8a6a1c); color: #0d0f14; border-color: var(--gold-light); }
-.btn--primary:hover { color: #0d0f14; filter: brightness(1.1); background: linear-gradient(180deg, var(--gold), #8a6a1c); }
+.btn--primary { background: linear-gradient(180deg, #2e7d52, #1f5d3a); color: #f7f9f0; border-color: var(--gold-light); }
+.btn--primary:hover { color: #f7f9f0; filter: brightness(1.15); background: linear-gradient(180deg, #2e7d52, #1f5d3a); }
 
 @media (max-width: 720px) {
   .header { grid-template-columns: 1fr; padding: var(--gap-md); }

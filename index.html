@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NewByte Games — Dashboard</title>
+  <title>NewByte Games Dashboard</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Cinzel+Decorative:wght@400;700;900&family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet" />
@@ -22,26 +22,26 @@
       <img src="assets/icons/dragon.svg" alt="" class="logo-icon" />
       <span class="logo-text">NewByte Games</span>
     </div>
-    <nav class="sidebar-nav" aria-label="Navegação principal">
+    <nav class="sidebar-nav" aria-label="Main navigation">
         <a href="#" class="nav-item active">
           <img src="assets/icons/dashboard.svg" alt="" class="nav-icon" />
-          <span>Painel Geral</span>
+          <span>Overview</span>
         </a>
         <a href="#" class="nav-item">
           <img src="assets/icons/gamepad.svg" alt="" class="nav-icon" />
-          <span>Projetos em Dev</span>
+          <span>Projects in Development</span>
         </a>
         <a href="#" class="nav-item">
           <img src="assets/icons/trophy.svg" alt="" class="nav-icon" />
-          <span>Conquistas</span>
+          <span>Achievements</span>
         </a>
         <a href="#" class="nav-item">
           <img src="assets/icons/scroll.svg" alt="" class="nav-icon" />
-          <span>Missões / Quests</span>
+          <span>Quests</span>
         </a>
         <a href="#" class="nav-item">
           <img src="assets/icons/group.svg" alt="" class="nav-icon" />
-          <span>Guilda</span>
+          <span>Guild</span>
         </a>
         <a href="#" class="nav-item">
           <img src="assets/icons/chart.svg" alt="" class="nav-icon" />
@@ -49,36 +49,36 @@
         </a>
         <a href="#" class="nav-item">
           <img src="assets/icons/coin.svg" alt="" class="nav-icon" />
-          <span>Receita</span>
+          <span>Revenue</span>
         </a>
         <a href="#" class="nav-item">
           <img src="assets/icons/settings.svg" alt="" class="nav-icon" />
-          <span>Configurações</span>
+          <span>Settings</span>
         </a>
     </nav>
     <div class="sidebar-footer">
-      <button type="button" id="darkmode-toggle" class="theme-toggle" aria-pressed="false">☀️ Modo Claro</button>
+      <button type="button" id="darkmode-toggle" class="theme-toggle" aria-pressed="false">🌙 Dark mode</button>
     </div>
   </aside>
 
   <header class="header">
     <form class="search-bar" role="search" onsubmit="return false">
-      <input type="search" placeholder="🔍 Buscar aventuras..." aria-label="Buscar aventuras" />
+      <input type="search" placeholder="🔍 Search adventures..." aria-label="Search adventures" />
     </form>
     <div class="user-info">
-      <img src="assets/avatars/dragonsmith.svg" alt="Avatar do usuário" class="user-avatar" />
-      <span class="user-name">Saudações, Aventureiro!</span>
+      <img src="assets/avatars/dragonsmith.svg" alt="User avatar" class="user-avatar" />
+      <span class="user-name">Greetings, Adventurer!</span>
     </div>
     <div class="header-actions">
-      <button type="button" class="btn btn--primary">⚔️ Novo Projeto</button>
+      <button type="button" class="btn btn--primary">⚔️ New Project</button>
       <button type="button" class="btn">📤 Upload</button>
-      <button type="button" class="btn">👥 Guilda</button>
+      <button type="button" class="btn">👥 Guild</button>
     </div>
   </header>
 
   <main class="main">
     <section class="projects-section">
-      <h2 class="section-title">Projetos em Desenvolvimento</h2>
+      <h2 class="section-title">Projects in Development</h2>
       <div class="projects-grid">
           <article class="project-card">
             <div class="card-header">
@@ -86,41 +86,41 @@
               <div class="card-badges"><span class="badge badge--genre">MMORPG</span></div>
             </div>
             <h3 class="card-title">Throne of Embers</h3>
-            <p class="card-description">Um mundo aberto de fantasia sombria onde impérios caem e heróis nascem das cinzas.</p>
+            <p class="card-description">An open world of dark fantasy where empires fall and heroes rise from the ashes.</p>
             <div class="card-progress">
               <div class="progress-bar">
                 <div class="progress-fill" style="--progress: 78%; --bar-color: var(--orange-legendary)"></div>
               </div>
-              <span class="progress-label">78% concluído</span>
+              <span class="progress-label">78% complete</span>
             </div>
             <div class="card-footer">
               <span class="card-author">@DragonSmith</span>
               <div class="card-actions">
-                <button type="button" aria-label="Favoritar">⭐</button>
-                <button type="button" aria-label="Acompanhar">👁️</button>
-                <button type="button" aria-label="Copiar link">🔗</button>
+                <button type="button" aria-label="Favorite">⭐</button>
+                <button type="button" aria-label="Watch">👁️</button>
+                <button type="button" aria-label="Copy link">🔗</button>
               </div>
             </div>
           </article>
           <article class="project-card">
             <div class="card-header">
               <img src="assets/icons/castle.svg" alt="" class="card-icon" />
-              <div class="card-badges"><span class="badge badge--genre">RPG Tático</span></div>
+              <div class="card-badges"><span class="badge badge--genre">Tactical RPG</span></div>
             </div>
             <h3 class="card-title">Ironhold Chronicles</h3>
-            <p class="card-description">Comande exércitos e conquiste fortalezas em batalhas táticas por turnos.</p>
+            <p class="card-description">Command armies and take fortresses in turn-based tactical battles.</p>
             <div class="card-progress">
               <div class="progress-bar">
                 <div class="progress-fill" style="--progress: 45%; --bar-color: var(--blue-alliance)"></div>
               </div>
-              <span class="progress-label">45% concluído</span>
+              <span class="progress-label">45% complete</span>
             </div>
             <div class="card-footer">
               <span class="card-author">@IronForgeDev</span>
               <div class="card-actions">
-                <button type="button" aria-label="Favoritar">⭐</button>
-                <button type="button" aria-label="Acompanhar">👁️</button>
-                <button type="button" aria-label="Copiar link">🔗</button>
+                <button type="button" aria-label="Favorite">⭐</button>
+                <button type="button" aria-label="Watch">👁️</button>
+                <button type="button" aria-label="Copy link">🔗</button>
               </div>
             </div>
           </article>
@@ -130,41 +130,41 @@
               <div class="card-badges"><span class="badge badge--genre">Action RPG</span></div>
             </div>
             <h3 class="card-title">Shadow of the Elders</h3>
-            <p class="card-description">Combates intensos contra antigos senhores das trevas em masmorras esquecidas.</p>
+            <p class="card-description">Fast fights against ancient dark lords in forgotten dungeons.</p>
             <div class="card-progress">
               <div class="progress-bar">
                 <div class="progress-fill" style="--progress: 92%; --bar-color: var(--purple-epic)"></div>
               </div>
-              <span class="progress-label">92% concluído</span>
+              <span class="progress-label">92% complete</span>
             </div>
             <div class="card-footer">
               <span class="card-author">@ShadowMage</span>
               <div class="card-actions">
-                <button type="button" aria-label="Favoritar">⭐</button>
-                <button type="button" aria-label="Acompanhar">👁️</button>
-                <button type="button" aria-label="Copiar link">🔗</button>
+                <button type="button" aria-label="Favorite">⭐</button>
+                <button type="button" aria-label="Watch">👁️</button>
+                <button type="button" aria-label="Copy link">🔗</button>
               </div>
             </div>
           </article>
           <article class="project-card">
             <div class="card-header">
               <img src="assets/icons/snowflake.svg" alt="" class="card-icon" />
-              <div class="card-badges"><span class="badge badge--genre">Sobrevivência</span></div>
+              <div class="card-badges"><span class="badge badge--genre">Survival</span></div>
             </div>
             <h3 class="card-title">Frostborn Saga</h3>
-            <p class="card-description">Sobreviva ao inverno eterno, construa abrigos e enfrente criaturas congeladas.</p>
+            <p class="card-description">Survive an endless winter, build shelters and face frozen creatures.</p>
             <div class="card-progress">
               <div class="progress-bar">
                 <div class="progress-fill" style="--progress: 33%; --bar-color: var(--blue-alliance)"></div>
               </div>
-              <span class="progress-label">33% concluído</span>
+              <span class="progress-label">33% complete</span>
             </div>
             <div class="card-footer">
               <span class="card-author">@FrostRogue</span>
               <div class="card-actions">
-                <button type="button" aria-label="Favoritar">⭐</button>
-                <button type="button" aria-label="Acompanhar">👁️</button>
-                <button type="button" aria-label="Copiar link">🔗</button>
+                <button type="button" aria-label="Favorite">⭐</button>
+                <button type="button" aria-label="Watch">👁️</button>
+                <button type="button" aria-label="Copy link">🔗</button>
               </div>
             </div>
           </article>
@@ -174,41 +174,41 @@
               <div class="card-badges"><span class="badge badge--genre">Roguelike</span></div>
             </div>
             <h3 class="card-title">Crimson Dungeon</h3>
-            <p class="card-description">Masmorras sempre diferentes, sangue, ouro e a promessa de uma nova tentativa.</p>
+            <p class="card-description">Dungeons that change every run, with blood, gold and one more try.</p>
             <div class="card-progress">
               <div class="progress-bar">
                 <div class="progress-fill" style="--progress: 67%; --bar-color: var(--red-horde)"></div>
               </div>
-              <span class="progress-label">67% concluído</span>
+              <span class="progress-label">67% complete</span>
             </div>
             <div class="card-footer">
               <span class="card-author">@CrimsonBlade</span>
               <div class="card-actions">
-                <button type="button" aria-label="Favoritar">⭐</button>
-                <button type="button" aria-label="Acompanhar">👁️</button>
-                <button type="button" aria-label="Copiar link">🔗</button>
+                <button type="button" aria-label="Favorite">⭐</button>
+                <button type="button" aria-label="Watch">👁️</button>
+                <button type="button" aria-label="Copy link">🔗</button>
               </div>
             </div>
           </article>
           <article class="project-card">
             <div class="card-header">
               <img src="assets/icons/wyrm.svg" alt="" class="card-icon" />
-              <div class="card-badges"><span class="badge badge--genre">RPG Narrativo</span></div>
+              <div class="card-badges"><span class="badge badge--genre">Narrative RPG</span></div>
             </div>
             <h3 class="card-title">Wyrmrest Legacy</h3>
-            <p class="card-description">Suas escolhas decidem o destino do último ninho de dragões do reino.</p>
+            <p class="card-description">Your choices decide the fate of the realm's last dragon nest.</p>
             <div class="card-progress">
               <div class="progress-bar">
                 <div class="progress-fill" style="--progress: 15%; --bar-color: var(--green-quest)"></div>
               </div>
-              <span class="progress-label">15% concluído</span>
+              <span class="progress-label">15% complete</span>
             </div>
             <div class="card-footer">
               <span class="card-author">@ElvenCoder</span>
               <div class="card-actions">
-                <button type="button" aria-label="Favoritar">⭐</button>
-                <button type="button" aria-label="Acompanhar">👁️</button>
-                <button type="button" aria-label="Copiar link">🔗</button>
+                <button type="button" aria-label="Favorite">⭐</button>
+                <button type="button" aria-label="Watch">👁️</button>
+                <button type="button" aria-label="Copy link">🔗</button>
               </div>
             </div>
           </article>
@@ -216,52 +216,52 @@
     </section>
 
     <section class="announcements-section">
-      <h2 class="section-title">Anúncios</h2>
+      <h2 class="section-title">Announcements</h2>
       <div class="announcements-list">
         <div class="announcement-item">
-          <h4>🔥 Patch 2.1 — Throne of Embers</h4>
-          <p>Novo sistema de crafting, balanceamento de classes e correção do bug do dragão invisível.</p>
+          <h4>🔥 Patch 2.1: Throne of Embers</h4>
+          <p>New crafting system, class balance changes and a fix for the invisible dragon bug.</p>
         </div>
         <div class="announcement-item">
-          <h4>🏆 Guild Wars — Evento Outubro</h4>
-          <p>Inscrições abertas para o torneio inter-guildas de Ironhold Chronicles.</p>
+          <h4>🏆 Guild Wars: October Event</h4>
+          <p>Sign-ups are open for the Ironhold Chronicles inter-guild tournament.</p>
         </div>
         <div class="announcement-item">
-          <h4>🐛 Bug Report — Frostborn Saga</h4>
-          <p>Identificado crash em mapas nevados. Hotfix previsto para esta semana.</p>
+          <h4>🐛 Bug Report: Frostborn Saga</h4>
+          <p>A crash on snowy maps was found. A hotfix is planned for this week.</p>
         </div>
       </div>
     </section>
 
     <section class="trending-section">
-      <h2 class="section-title">Em Alta</h2>
+      <h2 class="section-title">Trending</h2>
       <div class="trending-list">
           <div class="trending-item">
-            <img src="assets/avatars/dragonsmith.svg" alt="Avatar DragonSmith" class="trending-avatar" />
+            <img src="assets/avatars/dragonsmith.svg" alt="DragonSmith avatar" class="trending-avatar" />
             <div class="trending-info">
               <span class="trending-name">@DragonSmith</span>
-              <span class="trending-role">Lead Dev — Throne of Embers</span>
+              <span class="trending-role">Lead Dev, Throne of Embers</span>
             </div>
           </div>
           <div class="trending-item">
-            <img src="assets/avatars/elfcoder.svg" alt="Avatar ElfCoder" class="trending-avatar" />
+            <img src="assets/avatars/elfcoder.svg" alt="ElfCoder avatar" class="trending-avatar" />
             <div class="trending-info">
               <span class="trending-name">@ElfCoder</span>
-              <span class="trending-role">Narrative Dev — Wyrmrest Legacy</span>
+              <span class="trending-role">Narrative Dev, Wyrmrest Legacy</span>
             </div>
           </div>
           <div class="trending-item">
-            <img src="assets/avatars/dwarfdesign.svg" alt="Avatar DwarfDesign" class="trending-avatar" />
+            <img src="assets/avatars/dwarfdesign.svg" alt="DwarfDesign avatar" class="trending-avatar" />
             <div class="trending-info">
               <span class="trending-name">@DwarfDesign</span>
-              <span class="trending-role">Level Designer — Ironhold Chronicles</span>
+              <span class="trending-role">Level Designer, Ironhold Chronicles</span>
             </div>
           </div>
           <div class="trending-item">
-            <img src="assets/avatars/shadowmage.svg" alt="Avatar ShadowMage" class="trending-avatar" />
+            <img src="assets/avatars/shadowmage.svg" alt="ShadowMage avatar" class="trending-avatar" />
             <div class="trending-info">
               <span class="trending-name">@ShadowMage</span>
-              <span class="trending-role">Combat Dev — Shadow of the Elders</span>
+              <span class="trending-role">Combat Dev, Shadow of the Elders</span>
             </div>
           </div>
       </div>

@@ -1,15 +1,15 @@
-# NewByte Games — Dashboard
+# NewByte Games Dashboard
 
-Dashboard de uma empresa fictícia de jogos RPG, com visual dark fantasy medieval. Projeto no estilo do desafio de dashboard do [The Odin Project](https://www.theodinproject.com/), com **CSS Grid** como base do layout (body, sidebar, header, main e cards).
+A dashboard for a fictional RPG studio, with a dark green fantasy look. It follows The Odin Project dashboard challenge and uses CSS Grid for the main layout (body, sidebar, header, main area and cards).
 
-## Recursos
-- Sidebar de navegação, header com busca e ações
-- 6 cards de projetos com barra de progresso animada
-- Anúncios e perfis em alta
-- Alternância de tema claro/escuro (salva no `localStorage`)
-- Layout responsivo
+## Features
+- Sidebar navigation and a header with search and actions
+- Six project cards with animated progress bars
+- Announcements and trending profiles
+- Light and dark themes, saved in `localStorage`
+- Responsive layout
 
-## Estrutura
+## Structure
 ```
 index.html
 css/   reset, variables, main, sidebar, header, cards, announcements, trending
@@ -17,12 +17,12 @@ js/    darkmode.js
 assets/icons, assets/avatars
 ```
 
-## Como rodar
-Abra o `index.html` no navegador. Para o GitHub Pages: Settings → Pages → branch `main`, pasta `/ (root)`.
+## Running it
+Open `index.html` in a browser. For GitHub Pages, go to Settings, then Pages, and pick the branch and the root folder.
 
-## Créditos
-- Ícones: [game-icons.net](https://game-icons.net) — CC BY 3.0 (autores: Lorc, Delapouite, Willdabeast)
-- Avatares: [DiceBear](https://dicebear.com) (pixel-art)
-- Fontes: [Google Fonts](https://fonts.google.com) — SIL OFL (MedievalSharp, Cinzel, Cinzel Decorative, Lora)
+## Credits
+- Icons: [game-icons.net](https://game-icons.net), CC BY 3.0 (by Lorc, Delapouite and Willdabeast)
+- Avatars: [DiceBear](https://dicebear.com) (pixel-art)
+- Fonts: [Google Fonts](https://fonts.google.com), SIL OFL (MedievalSharp, Cinzel, Cinzel Decorative, Lora)
 
-Todos os nomes de jogos e empresas são fictícios. Nenhum asset de jogos comerciais foi usado.
+All game and company names are fictional. No assets from commercial games were used.
