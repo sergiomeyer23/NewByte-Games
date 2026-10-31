@@ -17,6 +17,9 @@ js/    darkmode.js
 assets/icons, assets/avatars
 ```
 
+## Sign-up page
+A character-creation style sign-up form lives in `signup/` (class picker, password strength bar, themed validation messages).
+
 ## Running it
 Open `index.html` in a browser. For GitHub Pages, go to Settings, then Pages, and pick the branch and the root folder.
 

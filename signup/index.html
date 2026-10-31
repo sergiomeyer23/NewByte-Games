@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Create Your Hero | NewByte Games</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Cinzel:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/signup.css" />
+</head>
+<body>
+  <section class="hero" aria-label="NewByte Games">
+    <div class="hero-band">
+      <img src="assets/icons/dragon.svg" alt="" class="hero-logo" />
+      <span class="logo-text">NewByte Games</span>
+      <p class="hero-tagline">Your legend begins here.</p>
+    </div>
+  </section>
+
+  <main class="form-side">
+    <div class="form-intro">
+      <h1>This is not an account. It is the start of a legend.</h1>
+      <p>Create your hero and join the guild.</p>
+    </div>
+
+    <form id="signup-form" class="signup-form" novalidate>
+      <h2 class="form-title">Forge your identity</h2>
+
+      <div class="field">
+        <label for="hero-name">Hero name</label>
+        <input id="hero-name" name="hero" type="text" placeholder="Aldric the Bold" required minlength="3" autocomplete="nickname" />
+        <span id="name-hint" class="hint" aria-live="polite"></span>
+      </div>
+
+      <div class="field">
+        <label for="email">Arcane mail</label>
+        <input id="email" name="email" type="email" placeholder="hero@realm.com" required autocomplete="email" />
+      </div>
+
+      <div class="field">
+        <label for="guild">Guild <span>(optional)</span></label>
+        <input id="guild" name="guild" type="text" placeholder="Order of the Ember" />
+      </div>
+
+      <fieldset class="classes">
+        <legend>Class</legend>
+        <div class="class-options">
+          <div class="class-option">
+            <input type="radio" id="class-warrior" name="class" value="warrior" checked />
+            <label for="class-warrior"><img src="assets/icons/warrior.svg" alt="" />Warrior</label>
+          </div>
+          <div class="class-option">
+            <input type="radio" id="class-mage" name="class" value="mage" />
+            <label for="class-mage"><img src="assets/icons/mage.svg" alt="" />Mage</label>
+          </div>
+          <div class="class-option">
+            <input type="radio" id="class-archer" name="class" value="archer" />
+            <label for="class-archer"><img src="assets/icons/archer.svg" alt="" />Archer</label>
+          </div>
+          <div class="class-option">
+            <input type="radio" id="class-healer" name="class" value="healer" />
+            <label for="class-healer"><img src="assets/icons/healer.svg" alt="" />Healer</label>
+          </div>
+        </div>
+      </fieldset>
+
+      <div class="field">
+        <label for="password">Secret password</label>
+        <input id="password" name="password" type="password" placeholder="At least 8 characters" required minlength="8" autocomplete="new-password" />
+        <div class="strength-bar" aria-hidden="true"><div id="strength-fill" class="strength-fill" data-level="0"></div></div>
+        <span id="strength-hint" class="hint" aria-live="polite">Pick a password to forge your seal.</span>
+      </div>
+
+      <div class="field">
+        <label for="confirm">Confirm seal</label>
+        <input id="confirm" name="confirm" type="password" placeholder="Repeat your password" required autocomplete="new-password" />
+        <span id="confirm-hint" class="hint" aria-live="polite"></span>
+      </div>
+
+      <button type="submit" class="submit">⚔️ Begin journey</button>
+      <p id="success" class="success" role="status" hidden></p>
+    </form>
+
+    <p class="login-link">Already have an account? <a href="#">Enter the guild</a></p>
+    <p class="credits">
+      Icons by <a href="https://game-icons.net" target="_blank" rel="noopener">game-icons.net</a> (CC BY 3.0: Lorc, Delapouite) |
+      Fonts by <a href="https://fonts.google.com" target="_blank" rel="noopener">Google Fonts</a> (SIL OFL) |
+      Background art drawn for this project |
+      <a href="../">Back to dashboard</a>
+    </p>
+  </main>
+
+  <script src="js/signup.js"></script>
+</body>
+</html>
